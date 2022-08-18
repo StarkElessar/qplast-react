@@ -1,0 +1,2 @@
+export const SET_VISIBLE_MENU = 'SET_VISIBLE_MENU'
+export const SET_CLOSE_MENU = 'SET_CLOSE_MENU'

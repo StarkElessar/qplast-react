@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import { publicRoutes } from '../routes'
@@ -10,17 +10,19 @@ const AppRouter = () => {
   return (
     <div className="wrapper">
       <Header />
-      <Routes>
-        {
-          publicRoutes.map(({ path, Component }) => (
-            <Route key={path} path={path} element={<Component />} exact />
-          ))
-        }
-        <Route path='*' element={<Home />} />
-      </Routes>
+      <main className="page">
+        <Routes>
+          {
+            publicRoutes.map(({ path, Component }) => (
+              <Route key={path} path={path} element={<Component />} exact />
+            ))
+          }
+          <Route path='*' element={<Home />} />
+        </Routes>
+      </main>
       <Footer />
     </div>
   )
 }
 
-export default AppRouter
+export default memo(AppRouter)

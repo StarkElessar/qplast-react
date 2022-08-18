@@ -4,7 +4,7 @@ body {
     overflow: hidden;
   }
 }
-.root {
+#root {
   height: 100%;
 }
 .wrapper {
@@ -23,9 +23,8 @@ body {
     padding: 0 ($mainOffset - 10);
   }
 }
-[class*="page__"] {
+.page {
   flex: 1 1 auto;
-  padding-bottom: 40px;
 }
 .row {display: flex;}
 .title {

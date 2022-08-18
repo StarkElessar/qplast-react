@@ -1,0 +1,36 @@
+body {
+  overflow-y: scroll;
+  &.lock {
+    overflow: hidden;
+  }
+}
+.root {
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+[class*="__container"] {
+  display: flex;
+  max-width: 1230px + $mainOffset * 2;
+  margin: 0 auto;
+  padding: 0 $mainOffset;
+  @media (max-width: 425.98px) {
+    padding: 0 ($mainOffset - 10);
+  }
+}
+[class*="page__"] {
+  flex: 1 1 auto;
+  padding-bottom: 40px;
+}
+.row {display: flex;}
+.title {
+  text-align: center;
+  @include adaptiveValue("font-size", 36, 21, 1);
+  font-weight: 700;
+  @include adaptiveValue("margin-bottom", 20, 12, 1);
+}

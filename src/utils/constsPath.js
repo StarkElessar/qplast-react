@@ -1,0 +1,6 @@
+export const HOME_ROUTE             = '/'
+export const CATALOG_ROUTE          = '/catalog'
+export const SHIPPING_PAYMENT_ROUTE = '/shipping-and-payment'
+export const NEWS_ROUTE             = '/news'
+export const ABOUT_ROUTE            = '/about'
+export const CONTACTS_ROUTE         = '/contacts'

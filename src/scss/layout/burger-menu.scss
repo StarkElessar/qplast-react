@@ -36,6 +36,17 @@
       margin-bottom: 20px;
     }
   }
+  &__block {
+    display: flex;
+    &.active ~ ul {
+      display: block;
+    }
+    & ~ ul {
+      padding-top: 15px;
+      padding-left: 10px;
+      display: none;
+    }
+  }
   &__link {
     transition: $standartTrans;
     &:hover {
@@ -43,6 +54,14 @@
     }
     &.active {
       color: $redColor;
+    }
+  }
+  &__icon {
+    cursor: pointer;
+    padding-left: 10px;
+    & svg {
+      width: 16px;
+      height: 16px;
     }
   }
 }

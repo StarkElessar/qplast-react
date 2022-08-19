@@ -21,6 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "postinstall": "link-module-alias",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -40,5 +41,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "link-module-alias": "^1.2.0"
+  },
+  "_moduleAliases": {
+    "@scss": "./src/scss",
+    "@src": "./src",
+    "@components": "./src/components",
+    "@img": "./src/assets/images"
   }
 }

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 
 import AppRouter from './components/AppRouter'
-import BurgerMenu from './components/BurgerMenu/BurgerMenu'
+import BurgerMenu from './components/BurgerMenu'
 
 const App = () => {
   const isVisibleBurgerMenu = useSelector(({ burgerMenu }) => burgerMenu.isVisible)

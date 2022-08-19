@@ -1,0 +1,60 @@
+@import '@scss/config/vars';
+
+.wrapper {
+  padding: 40px 0;
+  background: $darkBlueColor;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  flex: 0 0 33.333%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.logo {
+  width: 130px;
+  margin-bottom: 20px;
+}
+.text {
+  color: #fff;
+  line-height: 140%;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.title {
+  font-weight: 700;
+  color: $redColor;
+  margin-bottom: 10px;
+}
+.list {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.item {
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+.link {
+  color: #fff;
+  line-height: 140%;
+  transition: $standartTrans;
+  &:hover {
+    color: $redColor;
+  }
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  color: #fff;
+  & svg {
+    fill: #fff;
+    margin-right: 5px;
+  }
+}

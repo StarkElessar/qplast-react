@@ -8,7 +8,7 @@ import {
   HOME_ROUTE,
   NEWS_ROUTE,
   SHIPPING_PAYMENT_ROUTE
-} from '../../utils/constsPath'
+} from '../../../utils/constsPath'
 
 const NavList = () => {
   return (

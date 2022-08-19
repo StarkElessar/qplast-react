@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-import NavMenu from './NavMenu/NavMenu'
+import NavMenu from './NavMenu'
 
 const Header = () => {
   return (

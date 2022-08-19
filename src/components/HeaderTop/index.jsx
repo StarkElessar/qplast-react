@@ -2,7 +2,6 @@ import React from 'react'
 import { BsCheck } from 'react-icons/bs'
 import { BiTimeFive } from 'react-icons/bi'
 import { IoLocationSharp } from 'react-icons/io5'
-import { AiOutlineMail } from 'react-icons/ai'
 
 import logoImg from '@img/logo.png'
 import Item from './components/Item'

@@ -5,10 +5,10 @@ import NavMenu from './NavMenu'
 
 const Header = () => {
   return (
-    <div className='header'>
+    <header className='header'>
       <HeaderTop/>
       <NavMenu />
-    </div>
+    </header>
   )
 }
 

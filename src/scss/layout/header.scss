@@ -1,60 +1,76 @@
 .header {
   background: #fff;
   border-bottom: 1px solid #f1f1f1;
-
-  &__logo {
+}
+.top-header {
+  padding: 10px 0;
+  &__container {
+    align-items: center;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
     margin-right: auto;
-    font-weight: 700;
-    color: $blueColor;
-    font-size: 28px;
-    transition: $standartTrans;
-    &:hover {
-      color: $blackColor;
+    @media (max-width: 1090.98px) {
+      flex-direction: column;
+    }
+    @media (max-width: 390.98px) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 0;
     }
   }
-  &__nav {
+  &__logo {
+    margin-right: 10px;
+    @media (max-width: 375.98px) {
+      width: 110px;
+    }
+  }
+  &__description {
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 160%;
+  }
+  &__work-block {
     display: flex;
     align-items: center;
+    @media (max-width: 930.98px) {
+      flex-direction: column;
+      align-items: flex-start
+    }
+    @media (max-width: 700.98px) {
+      display: none;
+    }
   }
-  &__user {
-    color: $blueColor;
-    font-size: 18px;
+  &__work {
+    max-width: 220px;
     margin-right: 20px;
-    background: transparent;
-    transition: $standartTrans;
-    &:hover {
-      color: $blackColor;
+    @media (max-width: 930.98px) {
+      max-width: 285px;
+      margin-right: 0;
+      margin-bottom: 8px;
     }
   }
-  &__cart {
-    cursor: pointer;
-    margin: 0 20px;
-    & svg {
-      & path {
-        fill: $blueColor;
-      }
-    }
-  }
-  &__login {
-    padding: 8px 26px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+  &__shedule {
     display: flex;
-    align-items: center;
-    text-align: center;
-    color: $blueColor;
-    border: 2px solid $blueColor;
-    border-radius: 50px;
-    background: transparent;
-    transition: $standartTrans;
-    &:hover {
-      background: $blueColor;
-      color: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 38px;
+  }
+  &__media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+    @include adaptiveValue('margin-left', 50, 15, 2);
+    width: 150px;
+    height: 54px;
+    @media (max-width: 390.98px) {
+      display: none;
     }
   }
 }
-
 .nav-menu {
   padding: 10px 0;
   background: $darkBlueColor;
@@ -123,6 +139,9 @@
     width: 100%;
     right: 160px;
     border-radius: 5px;
+    @media (max-width: 430.98px) {
+      display: none;
+    }
     &-input {
       position: absolute;
       top: 50%;

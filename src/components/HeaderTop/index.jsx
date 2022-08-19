@@ -6,6 +6,7 @@ import { AiOutlineMail } from 'react-icons/ai'
 
 import logoImg from '@img/logo.png'
 import Item from './components/Item'
+import ContactInfo from '../ContactInfo'
 
 const HeaderTop = () => {
   return (
@@ -32,11 +33,7 @@ const HeaderTop = () => {
             <Item icon={<IoLocationSharp />} text='Схема проезда к офису и складу' path={'/contacts#map'} />
           </div>
         </div>
-        <div className='top-header__media'>
-          <Item icon='A1' text='+375 29 352 93 62' link={'tel:+375293529362'} />
-          <Item icon='MTS' text='+375 29 575 04 65' link={'tel:+375295750465'} />
-          <Item icon={<AiOutlineMail />} text='qplast@tut.by' link={'mailto:qplast@tut.by'} />
-        </div>
+        <ContactInfo isMobile/>
       </div>
     </div>
   )

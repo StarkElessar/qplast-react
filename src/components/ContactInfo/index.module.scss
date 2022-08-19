@@ -1,0 +1,39 @@
+@import '@scss/config/vars';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  &.mobile {
+    @media (max-width: 390.98px) {
+      display: none;
+    }
+  }
+  &.burger {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(#000, 5%);
+  }
+}
+.link {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  display: flex;
+  align-items: center;
+  transition: $standartTrans;
+  &:hover {
+    & .text {
+      color: $redColor;
+    }
+  }
+}
+.icon {
+  margin-right: 5px;
+  color: $redColor;
+  & svg {
+    fill: $redColor;
+  }
+}
+.text {
+  font-size: 14px;
+}

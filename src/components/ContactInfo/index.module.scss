@@ -13,6 +13,12 @@
     margin-top: 20px;
     border-top: 1px solid rgba(#000, 5%);
   }
+  &.footer {
+    margin-bottom: 20px;
+    & .text {
+      color: #fff;
+    }
+  }
 }
 .link {
   &:not(:last-child) {

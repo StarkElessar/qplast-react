@@ -1,14 +1,16 @@
 import React from 'react'
-import {AiOutlineMail} from 'react-icons/ai'
+import { AiOutlineMail } from 'react-icons/ai'
 
 import s from './index.module.scss'
 
-const ContactInfo = ({ isMobile, isBurger }) => {
+const ContactInfo = ({ isMobile, isBurger, isFooter }) => {
   const wrapperStyle = isMobile
     ? `${s.wrapper} ${s.mobile}`
     : isBurger
       ? `${s.wrapper} ${s.burger}`
-      : s.wrapper
+      : isFooter
+        ? `${s.wrapper} ${s.footer}`
+        : s.wrapper
 
   return (
     <div className={wrapperStyle}>
@@ -21,7 +23,7 @@ const ContactInfo = ({ isMobile, isBurger }) => {
         <span className={s.text}>+375 29 575 04 65</span>
       </a>
       <a className={s.link} href="mailto:qplast@tut.by">
-        <span className={s.icon}><AiOutlineMail/></span>
+        <span className={s.icon}><AiOutlineMail /></span>
         <span className={s.text}>qplast@tut.by</span>
       </a>
     </div>

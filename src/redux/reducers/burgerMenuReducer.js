@@ -5,17 +5,17 @@ const initialState = {
   linkItems: [
     { id: '1', label: 'Главная', path: '/', },
     {
-      id: '2', label: 'Каталог продукции', path: '/catalog', subList: [
+      id: '2', label: 'Каталог продукции', path: '/catalog', icon: true, subList: [
         {
-          id: '2-1', label: 'Уплотнители', path: '/uplotniteli', subList: [
-            { id: '2-1-1', label: 'Комплектующие для натяжных потолков', path: '/dlya-natyajnih-potolkov', },
-            { id: '2-1-2', label: 'Уплотнители для алюминиевых конструкций', path: '/dlya-alyuminievyh-konstrukci', },
-            { id: '2-1-3', label: 'Уплотнители для изготовления мебели', path: '/dlya-mebeli', },
-            { id: '2-1-4', label: 'Уплотнители для межкомнатных дверей', path: '/dlya-dverei', },
-            { id: '2-1-5', label: 'Уплотнители для окон ПВХ', path: '/dlya-okon-pvc', },
-            { id: '2-1-6', label: 'Уплотнители для деревянных окон', path: '/dlya-derevyannyh-okon', },
-            { id: '2-1-7', label: 'Уплотнители для стекла и поликарбоната', path: '/dlya-stekla-i-polikarbona', },
-            { id: '2-1-8', label: 'Прочие уплотнители', path: '/uncategorized', },
+          id: '2-1', label: 'Уплотнители', path: '/catalog/uplotniteli', icon: true, subList: [
+            { id: '2-1-1', label: 'Комплектующие для натяжных потолков', path: '/catalog/uplotniteli/dlya-natyajnih-potolkov', },
+            { id: '2-1-2', label: 'Уплотнители для алюминиевых конструкций', path: '/catalog/uplotniteli/dlya-alyuminievyh-konstrukci', },
+            { id: '2-1-3', label: 'Уплотнители для изготовления мебели', path: '/catalog/uplotniteli/dlya-mebeli', },
+            { id: '2-1-4', label: 'Уплотнители для межкомнатных дверей', path: '/catalog/uplotniteli/dlya-dverei', },
+            { id: '2-1-5', label: 'Уплотнители для окон ПВХ', path: '/catalog/uplotniteli/dlya-okon-pvc', },
+            { id: '2-1-6', label: 'Уплотнители для деревянных окон', path: '/catalog/uplotniteli/dlya-derevyannyh-okon', },
+            { id: '2-1-7', label: 'Уплотнители для стекла и поликарбоната', path: '/catalog/uplotniteli/dlya-stekla-i-polikarbona', },
+            { id: '2-1-8', label: 'Прочие уплотнители', path: '/catalog/uplotniteli/uncategorized', },
           ]
         },
         { id: '2-2', label: 'Рассеиватели для Led светильников', path: '/spreaders-for-led', },

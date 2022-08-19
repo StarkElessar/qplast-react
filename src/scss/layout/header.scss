@@ -35,6 +35,7 @@
   &__work-block {
     display: flex;
     align-items: center;
+    @include adaptiveValue('margin-right', 50, 15, 2);
     @media (max-width: 930.98px) {
       flex-direction: column;
       align-items: flex-start
@@ -57,18 +58,6 @@
     flex-direction: column;
     justify-content: space-between;
     height: 38px;
-  }
-  &__media {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 50px;
-    @include adaptiveValue('margin-left', 50, 15, 2);
-    width: 150px;
-    height: 54px;
-    @media (max-width: 390.98px) {
-      display: none;
-    }
   }
 }
 .nav-menu {
@@ -118,7 +107,7 @@
       position: absolute;
       bottom: -3px;
       left: 0;
-      height: 1px;
+      height: 2px;
       width: 0;
       background: $redColor;
       transition: $standartTrans;

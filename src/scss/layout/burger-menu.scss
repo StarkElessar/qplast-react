@@ -65,28 +65,4 @@
       height: 16px;
     }
   }
-  &__info {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    padding-top: 20px;
-    border-top: 1px solid rgba(#000, 5%);
-    &-link {
-      &:not(:last-child) {
-        margin-bottom: 10px;
-      }
-      display: flex;
-      align-items: center;
-    }
-    &-icon {
-      margin-right: 5px;
-      color: $redColor;
-      & svg {
-        fill: $redColor;
-      }
-    }
-    &-text {
-      font-size: 18px;
-    }
-  }
 }

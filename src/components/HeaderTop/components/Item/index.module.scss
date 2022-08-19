@@ -1,0 +1,30 @@
+@import '@scss/config/vars.scss';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: $redColor;
+  margin-right: 5px;
+  & svg {
+    & path {
+      fill: $redColor;
+    }
+  }
+}
+
+.text {
+  line-height: 120%;
+}
+
+.link {
+  transition: $standartTrans;
+  &:hover {
+    color: $redColor;
+  }
+}

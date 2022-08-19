@@ -5,8 +5,8 @@ import { FiAlignJustify } from 'react-icons/fi'
 
 import { CONTACTS_ROUTE } from '../../utils/constsPath'
 import { setVisibleMenu } from '../../redux/actions/burgerMenu'
-import NavList from './NavList'
-import SearchPanel from './SearchPanel'
+import NavList from './components/NavList'
+import SearchPanel from './components/SearchPanel'
 
 const NavMenu = () => {
   const dispatch = useDispatch()

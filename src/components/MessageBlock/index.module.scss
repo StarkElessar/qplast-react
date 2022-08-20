@@ -1,0 +1,39 @@
+@import '@scss/config/mixins';
+@import '@scss/config/vars';
+
+.messageBlock {
+  position: relative;
+  padding: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  border-radius: 10px;
+  background: rgba($greenColor, 5%);
+  box-shadow: 0 0 2px rgba(#000, 5%);
+  overflow: hidden;
+}
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  opacity: 5%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  & span {
+    @include adaptiveValue('padding-left', 10, 3, 1);
+    @include adaptiveValue('font-size', 18, 14, 1);
+    line-height: 140%;
+    font-weight: 300;
+  }
+  & svg {
+    flex: 0 0 18px;
+    stroke: $greenColor;
+  }
+}

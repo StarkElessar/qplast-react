@@ -1,8 +1,11 @@
 import React from 'react'
+import SectionPromo from '../components/SectionPromo'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <SectionPromo/>
+    </>
   )
 }
 

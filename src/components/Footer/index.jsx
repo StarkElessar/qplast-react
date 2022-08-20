@@ -68,7 +68,7 @@ const Footer = () => {
                 <a className={s.link} href="https://www.facebook.com/Qplast.by/">Facebook</a>
               </li>
               <li className={s.item}>
-                <a className={s.link} href='#'>YouTube</a>
+                <a className={s.link} href='https://www.youtube.com'>YouTube</a>
               </li>
               <li className={s.item}>
                 <a className={s.link} href="http://www.europages.com.ru/Q-PLAST/00000005278956-592326001.html">

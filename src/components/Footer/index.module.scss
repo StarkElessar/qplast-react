@@ -1,18 +1,51 @@
 @import '@scss/config/vars';
+@import '@scss/config/mixins';
 
 .wrapper {
-  padding: 40px 0;
+  @include adaptiveValue('padding-top', 40, 20, 1);
+  @include adaptiveValue('padding-bottom', 40, 20, 1);
   background: $darkBlueColor;
 }
 .row {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 830.98px) {
+    flex-wrap: wrap;
+  }
 }
 .column {
-  flex: 0 0 33.333%;
   display: flex;
   flex-direction: column;
   padding-right: 10px;
+  &:nth-child(1) {
+    flex: 1 0 45%;
+    @media (max-width: 830.98px) {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+      padding-right: 0;
+    }
+  }
+  &:nth-child(2) {
+    flex: 0 0 35%;
+    @media (max-width: 830.98px) {
+      flex: 1 1 60%;
+    }
+    @media (max-width: 410.98px) {
+      padding-right: 0;
+    }
+  }
+  &:nth-child(3) {
+    flex: 0 1 20%;
+    padding-right: 0;
+    @media (max-width: 830.98px) {
+      flex: 1 1 40%;
+      
+    }
+    @media (max-width: 410.98px) {
+      flex-basis: 100%;
+      margin-top: 20px;
+    }
+  }
 }
 .logo {
   width: 130px;
@@ -52,6 +85,7 @@
   display: flex;
   align-items: center;
   padding-top: 40px;
+  @include adaptiveValue('padding-top', 40, 20, 1);
   color: #fff;
   & svg {
     fill: #fff;

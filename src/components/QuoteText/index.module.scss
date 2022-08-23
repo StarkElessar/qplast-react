@@ -1,0 +1,29 @@
+@import '@scss/config/vars';
+@import '@scss/config/mixins';
+
+.wrapper {
+  position: relative;
+  padding: 40px 20px;
+  @include adaptiveValue('padding-top', 40, 20, 1);
+  @include adaptiveValue('padding-bottom', 40, 20, 1);
+  @include adaptiveValue('padding-right', 20, 10, 1);
+  @include adaptiveValue('padding-left', 20, 10, 1);
+  border-radius: 5px;
+  background: rgba(#000, 2%);
+  box-shadow: 0 0 15px rgba(#000, 5%);
+}
+.divider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 6px;
+  background: $darkBlueColor;
+}
+.text {
+  @include adaptiveValue('padding-left', 20, 10, 1);
+  line-height: 160%;
+  font-size: 18px;
+  font-style: italic;
+}

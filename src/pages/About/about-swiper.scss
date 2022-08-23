@@ -1,0 +1,41 @@
+@import '@scss/config/vars';
+
+
+.swiper {
+  .swiper-button-prev {
+    left: -5px;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 2px 0 2px rgba(#000, 15%);
+  }
+  .swiper-button-next {
+    right: -5px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: -2px 0 2px rgba(#000, 15%);
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 46%;
+    color: $redColor;
+    background: #fff;
+    &::after {
+      font-size: 28px;
+    }
+  }
+  .swiper-pagination {
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    transition: $standartTrans;
+  }
+  .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 8px;
+    border-radius: 6px;
+    background-color: $redColor;
+  }
+}

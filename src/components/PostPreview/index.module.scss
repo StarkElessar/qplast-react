@@ -1,0 +1,89 @@
+@import "@scss/config/mixins";
+@import "@scss/config/vars";
+
+.post {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(#000, 5%);
+  transition: $standartTrans;
+  &:hover {
+    box-shadow: 0 0 5px rgba(#000, 5%), 
+                0 0 10px rgba(#000, 5%), 
+                0 0 25px rgba(#000, 5%);
+  }
+  @media (max-width: 820.98px) {
+    flex-direction: column;
+  }
+}
+.postImg {
+  position: relative;
+  @include adaptiveValue('width', 400, 200, 1);
+  @include adaptiveValue('height', 250, 176, 1);
+  overflow: hidden;
+  @media (max-width: 820.98px) {
+    width: 100%;
+  }
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.postText {
+  flex: 0 1 540px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include adaptiveValue('padding-right', 20, 5, 1);
+  @include adaptiveValue('padding-left', 20, 5, 1);
+  @media (max-width: 820.98px) {
+    flex-basis: auto;
+  }
+}
+.postTitle {
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+.postMeta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  @media (max-width: 425.98px) {
+    flex-wrap: wrap;
+  }
+}
+.metaItem {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.metaIcon {
+  display: flex;
+  padding-right: 5px;
+  & svg {
+    fill: $redColor;
+  }
+}
+.metaText {
+  font-size: 13px;
+}
+.postButton {
+  display: inline-block;
+  color: #fff;
+  padding: 0 20px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  border-radius: 5px;
+  background: $redColor;
+  transition: $standartTrans;
+  &:hover {
+    background: darken($redColor, 5%);
+    box-shadow: $hoverBoxShadow;
+  }
+}

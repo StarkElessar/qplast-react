@@ -1,0 +1,60 @@
+@import "@scss/config/mixins";
+@import "@scss/config/vars";
+
+.contentWrapper {
+  flex: 1 0 calc(100% - 250px);
+  padding-right: 40px;
+  @media (max-width: 600.98px) {
+    padding-right: 0;
+  }
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.postsItem {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.sideBar {
+  flex: 0 1 250px;
+  padding-bottom: 40px;
+  @media (max-width: 820.98px) {
+    flex-basis: 170px;
+    min-width: 151px;
+  }
+  @media (max-width: 600.98px) {
+    margin-top: 40px;
+  }
+}
+.sideTitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.sideList {
+  margin-bottom: 40px;
+}
+.sideItem {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.sideLink {
+  display: flex;
+  align-items: center;
+  transition: $standartTrans;
+  &:hover {
+    .sideLinkText {
+      color: $redColor;
+    }
+  }
+}
+.sideLinkIcon {
+  padding-right: 5px;
+  & svg {
+    fill: $redColor;
+  }
+}

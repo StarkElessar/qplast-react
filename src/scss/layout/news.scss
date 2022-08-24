@@ -1,0 +1,9 @@
+.news__container {
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (max-width: 600.98px) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}

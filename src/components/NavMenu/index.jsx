@@ -10,10 +10,7 @@ import SearchPanel from './components/SearchPanel'
 
 const NavMenu = () => {
   const dispatch = useDispatch()
-
-  const onOpenMenu = () => {
-    dispatch(setVisibleMenu())
-  }
+  const onOpenMenu = () => dispatch(setVisibleMenu())
 
   return (
     <nav className='header__nav nav-menu'>

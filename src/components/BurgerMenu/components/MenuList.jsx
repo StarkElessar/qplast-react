@@ -27,7 +27,7 @@ const MenuList = ({ items }) => {
               </NavLink>
               {icon &&
                 <span
-                  className='burger-menu__icon'
+                  className={`burger-menu__icon ${isVisible ? 'active' : ''}`}
                   onClick={onShowSubList}
                 >
                   <IoMdArrowDropright />

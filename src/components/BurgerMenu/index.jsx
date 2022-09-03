@@ -1,36 +1,16 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
-import { VscClose } from 'react-icons/vsc'
+import React from 'react';
+import { Transition } from 'react-transition-group';
+import { useSelector } from 'react-redux';
+import BurgerMenu from './components/BurgerMenu';
 
-import MenuList from './components/MenuList'
-import logoImg from '@img/logo.png'
-import ContactInfo from '../ContactInfo'
-import useVisibleBurgerMenu from '../../hooks/useVisibleBurgerMenu'
-
-const BurgerMenu = ({ classTransition }) => {
-  const { onClickButtonClose, onClickWrapperClose, burgerMenuRef } =
-    useVisibleBurgerMenu()
-  const menuItems = useSelector(({ burgerMenu }) => burgerMenu.linkItems)
+const AnimatedBurgerMenu = () => {
+  const isVisibleBurgerMenu = useSelector(({ burgerMenu }) => burgerMenu.isVisible)
 
   return (
-    <div
-      className={`burger-menu ${classTransition}`}
-      onClick={onClickWrapperClose}
-      ref={burgerMenuRef}
-    >
-      <div className={`burger-menu__body ${classTransition}`}>
-        <button
-          className='burger-menu__close-button'
-          onClick={onClickButtonClose}
-        >
-          <VscClose className='burger-menu__close-icon' />
-        </button>
-        <img className='burger-menu__logo' src={logoImg} alt='QPlast' />
-        <MenuList items={menuItems} />
-        <ContactInfo isBurger />
-      </div>
-    </div>
+    <Transition in={isVisibleBurgerMenu} timeout={350}>
+      {(stateClasses) => <BurgerMenu classTransition={stateClasses} />}
+    </Transition>
   )
 }
 
-export default BurgerMenu
+export default AnimatedBurgerMenu

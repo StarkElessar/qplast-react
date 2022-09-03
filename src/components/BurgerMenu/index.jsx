@@ -1,29 +1,31 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { VscClose } from 'react-icons/vsc'
 
-import { setCloseMenu } from '../../redux/actions/burgerMenu'
 import MenuList from './components/MenuList'
 import logoImg from '@img/logo.png'
 import ContactInfo from '../ContactInfo'
+import useVisibleBurgerMenu from '../../hooks/useVisibleBurgerMenu'
 
-const BurgerMenu = () => {
-  const dispatch = useDispatch()
+const BurgerMenu = ({ classTransition }) => {
+  const { onClickButtonClose, onClickWrapperClose, burgerMenuRef } =
+    useVisibleBurgerMenu()
   const menuItems = useSelector(({ burgerMenu }) => burgerMenu.linkItems)
-  const stopClose = (event) => event.stopPropagation()
-  const onCloseMenu = () => dispatch(setCloseMenu())
 
   return (
-    <div className="burger-menu" onClick={onCloseMenu}>
-      <div className="burger-menu__body" onClick={stopClose}>
-        <button className="burger-menu__close-button" onClick={onCloseMenu}>
+    <div
+      className={`burger-menu ${classTransition}`}
+      onClick={onClickWrapperClose}
+      ref={burgerMenuRef}
+    >
+      <div className={`burger-menu__body ${classTransition}`}>
+        <button
+          className='burger-menu__close-button'
+          onClick={onClickButtonClose}
+        >
           <VscClose className='burger-menu__close-icon' />
         </button>
-        <img
-          className='burger-menu__logo'
-          src={logoImg}
-          alt="QPlast Logo"
-        />
+        <img className='burger-menu__logo' src={logoImg} alt='QPlast' />
         <MenuList items={menuItems} />
         <ContactInfo isBurger />
       </div>

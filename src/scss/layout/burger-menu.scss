@@ -4,7 +4,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(#000, 50%);
+  background: rgba(#000, 80%);
+  transition: all 350ms linear;
+  z-index: 50;
+  &.entering {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.entered {
+    opacity: 1;
+    visibility: visible;
+  }
+  &.exiting {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.exited {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   &__body {
     position: relative;
     width: 300px;
@@ -13,6 +32,19 @@
     padding: 50px 30px;
     background: #fff;
     overflow-y: auto;
+    transition: all 300ms linear;
+    &.entering {
+      transform: translateX(0);
+    }
+    &.entered {
+      transform: translateX(0);
+    }
+    &.exiting {
+      transform: translateX(100%);
+    }
+    &.exited {
+      transform: translateX(100%);
+    }
   }
   &__close-button {
     position: absolute;
@@ -41,6 +73,7 @@
     display: flex;
     &.active ~ ul {
       display: block;
+      transition: all 350ms ease-in-out;
     }
     & ~ ul {
       padding-top: 15px;
@@ -60,6 +93,22 @@
   &__icon {
     cursor: pointer;
     padding-left: 10px;
+    transition: all 280ms ease-in-out;
+    &:hover {
+      svg {
+        path {
+          fill: $redColor;
+        }
+      }
+    }
+    &.active {
+      transform: translateY(-5px) rotate(90deg);
+      svg {
+        path {
+          fill: $redColor;
+        }
+      }
+    }
     & svg {
       width: 16px;
       height: 16px;

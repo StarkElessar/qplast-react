@@ -12,7 +12,7 @@ const Shipping = () => {
   const { shippingList, calculationList } = useSelector(({ textData }) => textData)
   
   return (
-    <div className='shipping__container'>
+    <section className='shipping__container'>
       <h1 className={s.mainTitle}>Доставка и оплата</h1>
       <MessageBlock
         BackIcon={GiTakeMyMoney}
@@ -51,7 +51,7 @@ const Shipping = () => {
         В случае вопросов, пожеланий и претензий обращайтесь к нам по следующим координатам:
       </h3>
       <ContactInfo />
-    </div>
+    </section>
   )
 }
 

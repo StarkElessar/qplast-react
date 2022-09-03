@@ -1,12 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link, useLocation } from 'react-router-dom'
 import { AiOutlineUnorderedList, AiFillFolder } from 'react-icons/ai'
 
 import s from './index.module.scss'
 import ContactInfo from '@components/ContactInfo'
-import { NEWS_ROUTE } from '../../utils/constsPath'
-import PostPreview from '../../components/PostPreview'
-import { useSelector } from 'react-redux'
+import { ARTICLES_ROUTE, NEWS_ROUTE } from '../../utils/constsPath'
+import PostPreview from '@components/PostPreview'
 
 const News = () => {
   const { pathname } = useLocation()
@@ -14,11 +14,13 @@ const News = () => {
   const articles = allNews.filter(({ category }) => category === 'articles')
 
   return (
-    <div className='news__container'>
+    <section className='news__container'>
       <div className={s.contentWrapper}>
-        <h2 className={s.title}>Новости</h2>
+        <h2 className={s.title}>
+          {pathname === ARTICLES_ROUTE ? 'Статьи' : 'Новости'}
+        </h2>
         <ul className={s.postsListWrapper}>
-          {(pathname === '/news/posts' ? articles : allNews).map((news) => (
+          {(pathname === ARTICLES_ROUTE ? articles : allNews).map((news) => (
             <li className={s.postsItem} key={news.id}>
               <PostPreview
                 id={news.id}
@@ -41,7 +43,7 @@ const News = () => {
             </Link>
           </li>
           <li className={s.sideItem}>
-            <Link className={s.sideLink} to={`${NEWS_ROUTE}/posts`}>
+            <Link className={s.sideLink} to={ARTICLES_ROUTE}>
               <span className={s.sideLinkIcon}><AiFillFolder /></span>
               <span className={s.sideLinkText}>Статьи</span>
             </Link>
@@ -50,7 +52,7 @@ const News = () => {
         <h3 className={s.sideTitle}>Наши контакты</h3>
         <ContactInfo />
       </aside>
-    </div>
+    </section>
   )
 }
 

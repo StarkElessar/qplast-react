@@ -51,8 +51,8 @@ const App = () => (
         </Routes>
       </main>
       <Footer />
+      <BurgerMenu />
     </Wrapper>
-    <BurgerMenu />
   </BrowserRouter>
 )
 

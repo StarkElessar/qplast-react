@@ -1,12 +1,12 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Wrapper from './components/Wrapper';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Wrapper from './components/Wrapper'
+import Header from './components/Header'
+import Footer from './components/Footer'
 import BurgerMenu from './components/BurgerMenu'
 
-import Home from './pages/Home';
+import Home from './pages/Home'
 import Catalog from './pages/Catalog'
 import Shipping from './pages/Shipping'
 import News from './pages/News'
@@ -27,14 +27,14 @@ import {
   CONTACTS_ROUTE,
   SOGLASHENIE_ROUTE,
   PRIVACY_POLICY_ROUTE,
-  VAKANSII_ROUTE
-} from './utils/constsPath';
+  VAKANSII_ROUTE,
+} from './utils/constsPath'
 
 const App = () => (
   <BrowserRouter>
     <Wrapper>
       <Header />
-      <main className="page">
+      <main className='page'>
         <Routes>
           <Route path={HOME_ROUTE} element={<Home />} exact />
           <Route path={CATALOG_ROUTE} element={<Catalog />} exact />
@@ -56,4 +56,4 @@ const App = () => (
   </BrowserRouter>
 )
 
-export default App;
+export default App

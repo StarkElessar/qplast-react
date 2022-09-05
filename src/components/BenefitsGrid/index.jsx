@@ -14,5 +14,4 @@ const BenefitsGrid = ({ arrayData }) => (
   </div>
 )
 
-
 export default BenefitsGrid

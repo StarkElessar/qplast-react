@@ -5,10 +5,10 @@ const Wrapper = ({ children }) => {
   useScrollToTop()
 
   return (
-    <div className="wrapper">
-      { children }
+    <div className='wrapper'>
+      {children}
     </div>
-  ) 
+  )
 }
 
 export default Wrapper

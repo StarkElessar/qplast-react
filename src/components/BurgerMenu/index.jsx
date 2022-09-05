@@ -1,7 +1,7 @@
-import React from 'react';
-import { Transition } from 'react-transition-group';
-import { useSelector } from 'react-redux';
-import BurgerMenu from './components/BurgerMenu';
+import React from 'react'
+import { Transition } from 'react-transition-group'
+import { useSelector } from 'react-redux'
+import BurgerMenu from './components/BurgerMenu'
 
 const AnimatedBurgerMenu = () => {
   const isVisibleBurgerMenu = useSelector(({ burgerMenu }) => burgerMenu.isVisible)

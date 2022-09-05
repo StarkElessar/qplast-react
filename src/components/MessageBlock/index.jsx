@@ -7,14 +7,12 @@ const MessageBlock = ({ BackIcon, ListIcon, textList, children }) => {
     <div className={s.messageBlock}>
       <BackIcon className={s.icon} />
       <ul className={s.list}>
-        {
-          textList.map((obj) => (
-            <li className={s.item} key={obj.id}>
-              <ListIcon />
-              <span>{obj.label}</span>
-            </li>
-          ))
-        }
+        {textList.map((obj) => (
+          <li className={s.item} key={obj.id}>
+            <ListIcon />
+            <span>{obj.label}</span>
+          </li>
+        ))}
         {children}
       </ul>
     </div>

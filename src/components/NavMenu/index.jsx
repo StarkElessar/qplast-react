@@ -14,11 +14,8 @@ const NavMenu = () => {
 
   return (
     <nav className='header__nav nav-menu'>
-      <div className="nav-menu__container">
-        <button
-          className='nav-menu__burger-button'
-          onClick={onOpenMenu}
-        >
+      <div className='nav-menu__container'>
+        <button className='nav-menu__burger-button' onClick={onOpenMenu}>
           <FiAlignJustify className='nav-menu__burger-icon' />
         </button>
         <NavList />

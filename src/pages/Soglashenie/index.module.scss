@@ -1,7 +1,7 @@
 @import "@scss/config/mixins";
 @import "@scss/config/vars";
 
-.mainTitle {
+.titleH1 {
   line-height: 100%;
   font-weight: 700;
   @include adaptiveValue("font-size", 36, 28, 1);
@@ -22,14 +22,14 @@
   }
 }
 
-.title_2 {
+.titleH2 {
   font-weight: 700;
   line-height: 120%;
   @include adaptiveValue("font-size", 26, 21, 1);
   @include adaptiveValue("margin-bottom", 20, 15, 1);
 }
 
-.title_3 {
+.titleH3 {
   font-weight: 700;
   line-height: 120%;
   @include adaptiveValue("font-size", 18, 16, 1);

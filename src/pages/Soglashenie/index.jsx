@@ -14,7 +14,7 @@ const Soglashenie = () => {
 
   return (
     <section className='soglashenie__container'>
-      <h1 className={s.mainTitle}>Пользовательское соглашение</h1>
+      <h1 className={s.titleH1}>Пользовательское соглашение</h1>
       <div className={s.textBlock}>
         <p className={s.article}>
           Настоящее Пользовательское Соглашение (далее: Соглашение) регулирует
@@ -30,10 +30,10 @@ const Soglashenie = () => {
           </b>
         </p>
       </div>
-      <h2 className={s.title_2}>
+      <h2 className={s.titleH2}>
         Права и обязанности сторон
       </h2>
-      <h3 className={s.title_3}>Пользователь имеет право:</h3>
+      <h3 className={s.titleH3}>Пользователь имеет право:</h3>
       <ul className={s.list}>
         {userHasRight.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -41,7 +41,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h3 className={s.title_3}>Администрация имеет право:</h3>
+      <h3 className={s.titleH3}>Администрация имеет право:</h3>
       <ul className={s.list}>
         {adminHasRight.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -49,7 +49,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h3 className={s.title_3}>Пользователь обязуется:</h3>
+      <h3 className={s.titleH3}>Пользователь обязуется:</h3>
       <ul className={s.list}>
         {userUndertakes.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -57,7 +57,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h3 className={s.title_3}>Администрация обязуется:</h3>
+      <h3 className={s.titleH3}>Администрация обязуется:</h3>
       <ul className={s.list}>
         {adminUndertakes.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -65,7 +65,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h3 className={s.title_3}>Ответственность сторон:</h3>
+      <h3 className={s.titleH3}>Ответственность сторон:</h3>
       <ul className={s.list}>
         {responsibilityParties.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -73,7 +73,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h2 className={s.title_2}>
+      <h2 className={s.titleH2}>
         Условия действия Соглашения
       </h2>
       <div className={s.textBlock}>

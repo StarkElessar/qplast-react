@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-export default function ScrollToTop({children}) {
+const useScrollToTop = () => {
   const { pathname } = useLocation()
 
   useLayoutEffect(() => {
@@ -11,6 +11,6 @@ export default function ScrollToTop({children}) {
       behavior: 'smooth'
     })
   }, [pathname])
-
-  return children
 }
+
+export default useScrollToTop

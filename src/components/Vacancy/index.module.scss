@@ -1,0 +1,89 @@
+@import "@scss/config/mixins";
+@import "@scss/config/vars";
+
+.wrapper {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(#000, 3%);
+  }
+}
+
+.titleH2 {
+  font-weight: 700;
+  line-height: 120%;
+  @include adaptiveValue("font-size", 26, 21, 1);
+  @include adaptiveValue("margin-bottom", 20, 15, 1);
+}
+.titleH3 {
+  font-weight: 700;
+  line-height: 120%;
+  @include adaptiveValue("font-size", 18, 15, 1);
+  @include adaptiveValue("margin-bottom", 10, 6, 1);
+}
+
+.workSettings {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  & span {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px;
+    font-style: italic;
+    font-size: 16px;
+    @include adaptiveValue("font-size", 16, 12, 1);
+    background: rgba($redColor, 10%);
+  }
+}
+
+.list {
+  margin-bottom: 20px;
+}
+.listItem {
+  line-height: 120%;
+  @include adaptiveValue("font-size", 14, 13, 1);
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.contactBlock {
+  display: flex;
+  @media (max-width: 500.98px) {
+    flex-direction: column;
+  }
+  & p {
+    font-size: 14px;
+    padding-right: 10px;
+    @media (max-width: 500.98px) {
+      padding-right: 0;
+      padding-bottom: 8px;
+    }
+  }
+}
+.link {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  display: flex;
+  align-items: center;
+  transition: $standartTrans;
+  &:hover {
+    & .text {
+      color: $redColor;
+    }
+  }
+}
+.icon {
+  display: flex;
+  margin-right: 5px;
+  color: $redColor;
+  & svg {
+    fill: $redColor;
+  }
+}
+.text {
+  font-size: 14px;
+}

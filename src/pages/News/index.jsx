@@ -16,9 +16,9 @@ const News = () => {
   return (
     <section className='news__container'>
       <div className={s.contentWrapper}>
-        <h2 className={s.title}>
+        <h1 className={s.title}>
           {pathname === ARTICLES_ROUTE ? 'Статьи' : 'Новости'}
-        </h2>
+        </h1>
         <ul className={s.postsListWrapper}>
           {(pathname === ARTICLES_ROUTE ? articles : allNews).map((news) => (
             <li className={s.postsItem} key={news.id}>

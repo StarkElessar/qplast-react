@@ -4,8 +4,8 @@
 .mainTitle {
   line-height: 100%;
   font-weight: 700;
-  @include adaptiveValue('font-size', 36, 28, 1);
-  @include adaptiveValue('margin-bottom', 40, 15, 1);
+  @include adaptiveValue("font-size", 36, 28, 1);
+  @include adaptiveValue("margin-bottom", 40, 15, 1);
 }
 .title {
   font-weight: 700;

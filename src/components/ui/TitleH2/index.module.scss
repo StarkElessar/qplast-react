@@ -1,0 +1,9 @@
+@import "@scss/config/mixins";
+@import "@scss/config/vars";
+
+.title {
+  font-weight: 700;
+  line-height: 120%;
+  @include adaptiveValue("font-size", 26, 21, 1);
+  @include adaptiveValue("margin-bottom", 20, 15, 1);
+}

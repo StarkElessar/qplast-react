@@ -58,8 +58,10 @@
     "scss": "./src/scss",
     "src": "./src",
     "components": "./src/components",
-    "img": "./src/assets/images",
+    "images": "./src/assets/images",
     "ui": "./src/components/ui",
+    "types": "./src/types",
+    "utils": "./src/utils",
     "store": "./src/store"
   }
 }

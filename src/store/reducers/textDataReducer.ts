@@ -1,9 +1,11 @@
+import { ITextData } from 'types/textData'
 import { BiLike } from 'react-icons/bi'
 import { FaRegUser, FaShippingFast } from 'react-icons/fa'
 import { MdPriceCheck, MdCreditScore } from 'react-icons/md'
 import { RiSecurePaymentFill } from 'react-icons/ri'
+import { ImagesAboutProduct } from 'images/about'
 
-const initialState = {
+const initialState: ITextData = {
   shippingList: [
     { id: 1, label: 'наличный расчет;' },
     { id: 2, label: 'безналичный расчет.' },
@@ -17,22 +19,22 @@ const initialState = {
     },
   ],
   aboutProductImages: [
-    { id: 1, img: require('../../assets/images/about/01.jpg') },
-    { id: 2, img: require('../../assets/images/about/02.jpg') },
-    { id: 3, img: require('../../assets/images/about/03.jpg') },
-    { id: 4, img: require('../../assets/images/about/04.jpg') },
-    { id: 5, img: require('../../assets/images/about/05.jpg') },
-    { id: 6, img: require('../../assets/images/about/06.jpg') },
-    { id: 7, img: require('../../assets/images/about/07.jpg') },
-    { id: 8, img: require('../../assets/images/about/08.jpg') },
-    { id: 9, img: require('../../assets/images/about/09.jpg') },
-    { id: 10, img: require('../../assets/images/about/10.jpg') },
-    { id: 11, img: require('../../assets/images/about/11.jpg') },
-    { id: 12, img: require('../../assets/images/about/12.jpg') },
-    { id: 13, img: require('../../assets/images/about/13.jpg') },
-    { id: 14, img: require('../../assets/images/about/14.jpg') },
-    { id: 15, img: require('../../assets/images/about/15.jpg') },
-    { id: 16, img: require('../../assets/images/about/16.jpg') },
+    { id: 1, img: ImagesAboutProduct.ImageProduct_1 },
+    { id: 2, img: ImagesAboutProduct.ImageProduct_2 },
+    { id: 3, img: ImagesAboutProduct.ImageProduct_3 },
+    { id: 4, img: ImagesAboutProduct.ImageProduct_4 },
+    { id: 5, img: ImagesAboutProduct.ImageProduct_5 },
+    { id: 6, img: ImagesAboutProduct.ImageProduct_6 },
+    { id: 7, img: ImagesAboutProduct.ImageProduct_7 },
+    { id: 8, img: ImagesAboutProduct.ImageProduct_8 },
+    { id: 9, img: ImagesAboutProduct.ImageProduct_9 },
+    { id: 10, img: ImagesAboutProduct.ImageProduct_10 },
+    { id: 11, img: ImagesAboutProduct.ImageProduct_11 },
+    { id: 12, img: ImagesAboutProduct.ImageProduct_12 },
+    { id: 13, img: ImagesAboutProduct.ImageProduct_13 },
+    { id: 14, img: ImagesAboutProduct.ImageProduct_14 },
+    { id: 15, img: ImagesAboutProduct.ImageProduct_15 },
+    { id: 16, img: ImagesAboutProduct.ImageProduct_16 },
   ],
   aboutBenefitsGrid: [
     {
@@ -290,4 +292,4 @@ const initialState = {
   ],
 }
 
-export const textDataReducer = (state = initialState) => state
+export const textDataReducer = (state = initialState): ITextData => state

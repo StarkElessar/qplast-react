@@ -1,10 +1,12 @@
-import { NEWS_ROUTE } from '../../utils/constsPath'
+import { RouteVariables } from 'types/routesTypes'
+import { INewsState } from 'types/newsTypes'
+import { ImagesPostNews } from 'images/posts'
 
-const initialState = {
+const initialState: INewsState = {
   allNews: [
     {
       id: 1,
-      img: require('../../assets/images/posts/01.jpg'),
+      img: ImagesPostNews.ImagePost_1,
       title: 'Требуются сотрудники',
       postDate: '14 февраля, 2022',
       postTag: 'Все новости',
@@ -15,7 +17,7 @@ const initialState = {
     },
     {
       id: 2,
-      img: require('../../assets/images/posts/02.jpg'),
+      img: ImagesPostNews.ImagePost_2,
       title: 'Мы обновили сайт!',
       postDate: '22 декабря, 2021',
       postTag: 'Все новости',
@@ -26,7 +28,7 @@ const initialState = {
     },
     {
       id: 3,
-      img: require('../../assets/images/posts/03.jpg'),
+      img: ImagesPostNews.ImagePost_3,
       title:
         'В Mile можно купить в розницу наш уплотнитель для ремонта ПВХ окон',
       postDate: '23 ноября, 2021',
@@ -48,12 +50,12 @@ const initialState = {
           <li>г. Минск, пр-т Независимости, 171;</li>
           <li>г. Молодечно, ул. Великий Гостинец, 67Г.</li>
         </ul>
-        <p>Информацию о монтаже уплотнителя смотрите по <Link to={'${NEWS_ROUTE}/4'}>ссылке.</Link></p>`,
+        <p>Информацию о монтаже уплотнителя смотрите по <Link to={'${RouteVariables.NEWS_ROUTE()}/4'}>ссылке.</Link></p>`,
       more: false,
     },
     {
       id: 4,
-      img: require('../../assets/images/posts/04.jpg'),
+      img: ImagesPostNews.ImagePost_4,
       title: 'Монтаж уплотнителя для ремонта ПВХ окон',
       postDate: '23 ноября, 2021',
       postTag: 'Статьи',
@@ -64,7 +66,7 @@ const initialState = {
     },
     {
       id: 5,
-      img: require('../../assets/images/posts/05.jpg'),
+      img: ImagesPostNews.ImagePost_5,
       title: 'Обновление производства',
       postDate: '19 ноября, 2021',
       postTag: 'Все новости',
@@ -75,7 +77,7 @@ const initialState = {
     },
     {
       id: 6,
-      img: require('../../assets/images/posts/06.jpg'),
+      img: ImagesPostNews.ImagePost_6,
       title: 'Новый адрес производства',
       postDate: '28 октября, 2019',
       postTag: 'Все новости',
@@ -86,7 +88,7 @@ const initialState = {
     },
     {
       id: 7,
-      img: require('../../assets/images/posts/07.jpg'),
+      img: ImagesPostNews.ImagePost_7,
       title: 'Сотрудничество',
       postDate: '14 июня, 2018',
       postTag: 'Все новости',
@@ -97,7 +99,7 @@ const initialState = {
     },
     {
       id: 8,
-      img: require('../../assets/images/posts/08.jpg'),
+      img: ImagesPostNews.ImagePost_8,
       title: 'Скупка ПВХ и ТЭП',
       postDate: '23 декабря, 2017',
       postTag: 'Все новости',
@@ -115,4 +117,4 @@ const initialState = {
   ],
 }
 
-export const newsReducer = (state = initialState) => state
+export const newsReducer = (state = initialState): INewsState => state

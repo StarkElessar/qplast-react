@@ -1,9 +1,9 @@
-@import '@scss/config/vars';
-@import '@scss/config/mixins';
+@import "scss/config/vars";
+@import "scss/config/mixins";
 
 .wrapper {
-  @include adaptiveValue('padding-top', 40, 20, 1);
-  @include adaptiveValue('padding-bottom', 40, 20, 1);
+  @include adaptiveValue("padding-top", 40, 20, 1);
+  @include adaptiveValue("padding-bottom", 40, 20, 1);
   background: $darkBlueColor;
 }
 .row {
@@ -39,7 +39,6 @@
     padding-right: 0;
     @media (max-width: 830.98px) {
       flex: 1 1 40%;
-      
     }
     @media (max-width: 410.98px) {
       flex-basis: 100%;
@@ -85,7 +84,7 @@
   display: flex;
   align-items: center;
   padding-top: 40px;
-  @include adaptiveValue('padding-top', 40, 20, 1);
+  @include adaptiveValue("padding-top", 40, 20, 1);
   color: #fff;
   & svg {
     fill: #fff;

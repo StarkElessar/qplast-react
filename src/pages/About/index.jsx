@@ -9,8 +9,8 @@ import 'swiper/scss/pagination'
 
 import s from './index.module.scss'
 import './about-swiper.scss'
-import { QuoteText, BenefitsGrid, ContactInfo } from '@components'
-import { TitleH1, TitleH3 } from '@ui'
+import { QuoteText, BenefitsGrid, ContactInfo } from 'components'
+import { TitleH1, TitleH3 } from 'ui'
 
 const About = () => {
   const { aboutProductImages, aboutBenefitsGrid } = useSelector(

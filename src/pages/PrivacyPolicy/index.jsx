@@ -1,7 +1,7 @@
 import React from 'react'
 
 import s from './index.module.scss'
-import {TitleH1, TitleH3} from '@ui'
+import { TitleH1, TitleH3 } from 'ui'
 
 const PrivacyPolicy = () => {
   return (

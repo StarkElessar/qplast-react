@@ -2,21 +2,21 @@ import React, { useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { VscClose } from 'react-icons/vsc'
 
-import logoImg from '@img/logo.png'
-import { ContactInfo } from '@components'
+import logoImg from 'img/logo.png'
+import { ContactInfo } from 'components'
 import MenuList from './MenuList'
 import useLockBodyScroll from '../../../hooks/useLockBodyScroll'
-import { setCloseMenu } from '@store/actions/burgerMenu'
+import { setCloseMenu } from 'store/actions/burgerMenu'
 
 const BurgerMenu = ({ classTransition }) => {
   const dispatch = useDispatch()
   const burgerMenuRef = useRef()
   const closeMenu = () => dispatch(setCloseMenu())
-  const handleOutsideMenuClick = ({ target }) => target === burgerMenuRef.current && closeMenu()
-  const {
-    isVisible: isVisibleBurgerMenu,
-    linkItems: menuItems
-  } = useSelector(({ burgerMenu }) => burgerMenu)
+  const handleOutsideMenuClick = ({ target }) =>
+    target === burgerMenuRef.current && closeMenu()
+  const { isVisible: isVisibleBurgerMenu, linkItems: menuItems } = useSelector(
+    ({ burgerMenu }) => burgerMenu
+  )
 
   useLockBodyScroll(isVisibleBurgerMenu)
 

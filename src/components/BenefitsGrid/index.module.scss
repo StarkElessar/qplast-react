@@ -1,5 +1,5 @@
-@import "@scss/config/mixins";
-@import "@scss/config/vars";
+@import "scss/config/mixins";
+@import "scss/config/vars";
 
 .wrapper {
   display: grid;
@@ -8,10 +8,10 @@
   grid-gap: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
-  @media (max-width:620.98px) {
+  @media (max-width: 620.98px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width:390.98px) {
+  @media (max-width: 390.98px) {
     grid-template-columns: repeat(1, 1fr);
   }
 }

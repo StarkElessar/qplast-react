@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { AiOutlineCopyrightCircle } from 'react-icons/ai'
 
 import s from './index.module.scss'
-import logo from '@img/logo-white.png'
+import logo from 'img/logo-white.png'
 import ContactInfo from '../ContactInfo'
 
 const Footer = () => {

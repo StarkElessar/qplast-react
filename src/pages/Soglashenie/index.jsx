@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 import s from './index.module.scss'
-import { TitleH1, TitleH2, TitleH3 } from '@ui'
+import { TitleH1, TitleH2, TitleH3 } from 'ui'
 
 const Soglashenie = () => {
   const {

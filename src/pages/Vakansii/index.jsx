@@ -1,9 +1,9 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import Vacancy from '@components/Vacancy'
+import Vacancy from 'components/Vacancy'
 
 import s from './index.module.scss'
-import {TitleH1} from '@ui'
+import { TitleH1 } from 'ui'
 
 const Vakansii = () => {
   const { allVacancy } = useSelector(({ textData }) => textData)

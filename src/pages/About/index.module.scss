@@ -1,5 +1,5 @@
-@import '@scss/config/mixins';
-@import '@scss/config/vars';
+@import "scss/config/mixins";
+@import "scss/config/vars";
 
 .article {
   line-height: 140%;
@@ -14,15 +14,15 @@
   max-width: 100%;
   padding: 0 10px 20px 10px;
   margin-bottom: 20px;
-  @include adaptiveValue('height', 270, 80, 1);
+  @include adaptiveValue("height", 270, 80, 1);
   @media (max-width: 865.98px) {
-    @include adaptiveValue('height', 370, 160, 1);
+    @include adaptiveValue("height", 370, 160, 1);
   }
   @media (max-width: 805.98px) {
-    @include adaptiveValue('height', 370, 120, 1);
+    @include adaptiveValue("height", 370, 120, 1);
   }
   @media (max-width: 465px) {
-    @include adaptiveValue('height', 720, 215, 1);
+    @include adaptiveValue("height", 720, 215, 1);
   }
 }
 .imgBlock {

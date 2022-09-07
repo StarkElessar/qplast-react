@@ -1,5 +1,5 @@
-@import '@scss/config/mixins';
-@import '@scss/config/vars';
+@import "scss/config/mixins";
+@import "scss/config/vars";
 
 .messageBlock {
   position: relative;
@@ -27,8 +27,8 @@
     margin-bottom: 10px;
   }
   & span {
-    @include adaptiveValue('padding-left', 10, 3, 1);
-    @include adaptiveValue('font-size', 18, 14, 1);
+    @include adaptiveValue("padding-left", 10, 3, 1);
+    @include adaptiveValue("font-size", 18, 14, 1);
     line-height: 140%;
     font-weight: 300;
   }

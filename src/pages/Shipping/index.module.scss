@@ -1,15 +1,15 @@
-@import '@scss/config/mixins';
-@import '@scss/config/vars';
+@import "scss/config/mixins";
+@import "scss/config/vars";
 
 .textBlock {
   display: flex;
   flex-direction: column;
-  @include adaptiveValue('margin-bottom', 40, 15, 1);
+  @include adaptiveValue("margin-bottom", 40, 15, 1);
 }
 .article {
   line-height: 160%;
-  @include adaptiveValue('font-size', 16, 14, 1);
+  @include adaptiveValue("font-size", 16, 14, 1);
   &:not(:last-child) {
-    @include adaptiveValue('margin-bottom', 20, 10, 1);
+    @include adaptiveValue("margin-bottom", 20, 10, 1);
   }
 }

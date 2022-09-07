@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { FiAlignJustify } from 'react-icons/fi'
 
 import { CONTACTS_ROUTE } from '../../utils/constsPath'
-import { setVisibleMenu } from '@store/actions/burgerMenu'
+import { setVisibleMenu } from 'store/actions/burgerMenu'
 import NavList from './components/NavList'
 import SearchPanel from './components/SearchPanel'
 

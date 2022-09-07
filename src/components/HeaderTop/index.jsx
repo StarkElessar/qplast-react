@@ -3,7 +3,7 @@ import { BsCheck } from 'react-icons/bs'
 import { BiTimeFive } from 'react-icons/bi'
 import { IoLocationSharp } from 'react-icons/io5'
 
-import logoImg from '@img/logo.png'
+import logoImg from 'img/logo.png'
 import Item from './components/Item'
 import ContactInfo from '../ContactInfo'
 

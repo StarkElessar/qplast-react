@@ -51,6 +51,8 @@
     "@scss": "./src/scss",
     "@src": "./src",
     "@components": "./src/components",
-    "@img": "./src/assets/images"
+    "@img": "./src/assets/images",
+    "@ui": "./src/components/ui",
+    "@store": "./src/store"
   }
 }

@@ -2,11 +2,11 @@ import React, { useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { VscClose } from 'react-icons/vsc'
 
-import MenuList from './MenuList'
 import logoImg from '@img/logo.png'
-import ContactInfo from '../../ContactInfo'
+import { ContactInfo } from '@components'
+import MenuList from './MenuList'
 import useLockBodyScroll from '../../../hooks/useLockBodyScroll'
-import { setCloseMenu } from '../../../redux/actions/burgerMenu'
+import { setCloseMenu } from '@store/actions/burgerMenu'
 
 const BurgerMenu = ({ classTransition }) => {
   const dispatch = useDispatch()

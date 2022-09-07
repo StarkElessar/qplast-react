@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 
-import HeaderTop from './HeaderTop'
-import NavMenu from './NavMenu'
+import HeaderTop from '../HeaderTop'
+import NavMenu from '../NavMenu'
 
 const Header = () => {
   return (

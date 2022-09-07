@@ -1,21 +1,20 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Wrapper from './components/Wrapper'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import BurgerMenu from './components/BurgerMenu'
+import { Wrapper, Header, Footer, BurgerMenu } from './components'
 
-import Home from './pages/Home'
-import Catalog from './pages/Catalog'
-import Shipping from './pages/Shipping'
-import News from './pages/News'
-import About from './pages/About'
-import Contacts from './pages/Contacts'
-import Soglashenie from './pages/Soglashenie'
-import PrivacyPolicy from './pages/PrivacyPolicy'
-import Vakansii from './pages/Vakansii'
-import OnePost from './components/OnePost'
+import {
+  OnePost,
+  Home,
+  Catalog,
+  Shipping,
+  News, 
+  About,
+  Contacts,
+  Soglashenie,
+  PrivacyPolicy,
+  Vakansii
+} from './pages'
 
 import {
   HOME_ROUTE,

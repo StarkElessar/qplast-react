@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { IoMdArrowDropright } from 'react-icons/io'
 
-import { setCloseMenu } from '../../../redux/actions/burgerMenu'
+import { setCloseMenu } from '@store/actions/burgerMenu'
 
 const MenuList = ({ items }) => {
   const dispatch = useDispatch()

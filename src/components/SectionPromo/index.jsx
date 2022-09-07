@@ -1,10 +1,9 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 import { FiExternalLink } from 'react-icons/fi'
 
 import s from './index.module.scss'
 import { CATALOG_ROUTE } from 'src/utils/constsPath'
-import uplotniteliImg from 'img/home/01.png'
+import uplotniteliImg from 'images/home/01.png'
 
 const SectionPromo = () => {
   return (

@@ -1,6 +1,6 @@
 import { useLayoutEffect } from 'react'
 
-const useLockBodyScroll = (isVisibleBurgerMenu) => {
+export const useLockBodyScroll = (isVisibleBurgerMenu) => {
   useLayoutEffect(() => {
     const { body } = document
     const bodyScrollOffset = window.innerWidth - body.offsetWidth
@@ -14,5 +14,3 @@ const useLockBodyScroll = (isVisibleBurgerMenu) => {
     }
   }, [isVisibleBurgerMenu])
 }
-
-export default useLockBodyScroll

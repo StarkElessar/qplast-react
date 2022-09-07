@@ -1,28 +1,26 @@
-import React, { memo } from 'react'
-import { useDispatch } from 'react-redux'
+import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { FiAlignJustify } from 'react-icons/fi'
 
-import { CONTACTS_ROUTE } from '../../utils/constsPath'
-import { setVisibleMenu } from 'store/actions/burgerMenu'
+import { useActions } from 'hooks'
+import { RouteVariables } from 'types/routesTypes'
 import NavList from './components/NavList'
 import SearchPanel from './components/SearchPanel'
 
 const NavMenu = () => {
-  const dispatch = useDispatch()
-  const onOpenMenu = () => dispatch(setVisibleMenu())
+  const {setVisibleMenu} = useActions()
 
   return (
     <nav className='header__nav nav-menu'>
       <div className='nav-menu__container'>
-        <button className='nav-menu__burger-button' onClick={onOpenMenu}>
+        <button className='nav-menu__burger-button' onClick={setVisibleMenu}>
           <FiAlignJustify className='nav-menu__burger-icon' />
         </button>
         <NavList />
         <SearchPanel />
         <Link
           className='nav-menu__button'
-          to={`${CONTACTS_ROUTE}/#contact-forma`}
+          to={`${RouteVariables.CONTACTS_ROUTE()}/#contact-forma`}
         >
           Обратная связь
         </Link>

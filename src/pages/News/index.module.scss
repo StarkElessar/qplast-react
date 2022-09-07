@@ -46,6 +46,11 @@
       color: $redColor;
     }
   }
+  &.active {
+    .sideLinkText {
+      color: $redColor;
+    }
+  }
 }
 .sideLinkIcon {
   padding-right: 5px;

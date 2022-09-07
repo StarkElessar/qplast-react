@@ -1,15 +1,12 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { useDispatch } from 'react-redux'
 import { IoMdArrowDropright } from 'react-icons/io'
 
-import { setCloseMenu } from 'store/actions/burgerMenu'
+import { useActions } from 'hooks'
 
 const MenuList = ({ items }) => {
-  const dispatch = useDispatch()
+  const {setCloseMenu} = useActions()
   const [isVisible, setIsVisible] = useState(false)
-
-  const onCloseBurgerMenu = () => dispatch(setCloseMenu())
   const onShowSubList = () => setIsVisible(!isVisible)
 
   return (
@@ -20,7 +17,7 @@ const MenuList = ({ items }) => {
             <NavLink
               to={path}
               className='burger-menu__link'
-              onClick={onCloseBurgerMenu}
+              onClick={setCloseMenu}
             >
               {label}
             </NavLink>

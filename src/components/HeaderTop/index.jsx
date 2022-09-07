@@ -1,11 +1,11 @@
-import React from 'react'
 import { BsCheck } from 'react-icons/bs'
 import { BiTimeFive } from 'react-icons/bi'
 import { IoLocationSharp } from 'react-icons/io5'
 
-import logoImg from 'img/logo.png'
 import Item from './components/Item'
-import ContactInfo from '../ContactInfo'
+import {ContactInfo} from 'components'
+import { LogoImages } from 'images'
+import { RouteVariables } from 'types/routesTypes'
 
 const HeaderTop = () => {
   return (
@@ -13,7 +13,7 @@ const HeaderTop = () => {
       <div className='top-header__container'>
         <div className='top-header__block'>
           <div className='top-header__logo'>
-            <img className='top-header__logo' src={logoImg} alt='QPlast Logo' />
+            <img className='top-header__logo' src={LogoImages.LogoImage} alt='QPlast Logo' />
           </div>
           <div className='top-header__description'>
             Производство уплотнителей ООО "КЮ Пласт Тех"
@@ -34,7 +34,7 @@ const HeaderTop = () => {
             <Item
               icon={<IoLocationSharp />}
               text='Схема проезда к офису и складу'
-              path={'/contacts#map'}
+              path={`${RouteVariables.CONTACTS_ROUTE()}/#map`}
             />
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { useLayoutEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-const useScrollToTop = () => {
+export const useScrollToTop = () => {
   const { pathname } = useLocation()
 
   useLayoutEffect(() => {
@@ -12,5 +12,3 @@ const useScrollToTop = () => {
     })
   }, [pathname])
 }
-
-export default useScrollToTop

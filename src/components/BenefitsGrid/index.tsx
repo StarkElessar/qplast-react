@@ -1,8 +1,12 @@
-import React from 'react'
-
+import { FC } from 'react'
+import { IAboutBenefitsGrid } from 'types/textData'
 import s from './index.module.scss'
 
-const BenefitsGrid = ({ arrayData }) => (
+interface BenefitsGridProps {
+  arrayData: IAboutBenefitsGrid[]
+}
+
+const BenefitsGrid: FC<BenefitsGridProps> = ({ arrayData }): JSX.Element => (
   <div className={s.wrapper}>
     {arrayData.map(({ id, IconTag, label, description }) => (
       <article className={s.card} key={id}>

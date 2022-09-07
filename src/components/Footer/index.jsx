@@ -1,14 +1,14 @@
-import React, { memo } from 'react'
-import { useSelector } from 'react-redux'
+import { memo } from 'react'
 import { Link } from 'react-router-dom'
 import { AiOutlineCopyrightCircle } from 'react-icons/ai'
 
 import s from './index.module.scss'
-import logo from 'img/logo-white.png'
 import ContactInfo from '../ContactInfo'
+import { LogoImages } from 'images'
+import { useTypedSelector } from '../../hooks/useTypedSelector'
 
 const Footer = () => {
-  const { productCatalog, info } = useSelector(({ footer }) => footer)
+  const { productCatalog, info } = useTypedSelector(({ footer }) => footer)
   const years = `2017 - ${new Date().getFullYear()}`
 
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
       <div className='footer__container'>
         <div className={s.row}>
           <div className={s.column}>
-            <img className={s.logo} src={logo} alt='QPlast Logo' />
+            <img className={s.logo} src={LogoImages.LogoWhiteImage} alt='QPlast Logo' />
             <p className={s.text}>ООО "КЮ Пласт Тех"</p>
             <p className={s.text}>УНП 692151319</p>
             <p className={s.text}>

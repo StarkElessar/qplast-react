@@ -3,13 +3,14 @@ import { useSelector } from 'react-redux'
 import Vacancy from '@components/Vacancy'
 
 import s from './index.module.scss'
+import {TitleH1} from '@ui'
 
 const Vakansii = () => {
   const { allVacancy } = useSelector(({ textData }) => textData)
 
   return (
     <section className='vakansii__container'>
-      <h1 className={s.titleH1}>Вакансии</h1>
+      <TitleH1>Вакансии</TitleH1>
       {allVacancy.map((vacancy) => (
         <Vacancy key={vacancy.id} items={vacancy} />
       ))}

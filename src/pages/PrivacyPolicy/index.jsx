@@ -1,18 +1,19 @@
 import React from 'react'
 
 import s from './index.module.scss'
+import {TitleH1, TitleH3} from '@ui'
 
 const PrivacyPolicy = () => {
   return (
     <section className='privacy__container'>
-      <h1 className={s.titleH1}>Политика конфиденциальности</h1>
-      <h3 className={s.titleH3}>Кто мы</h3>
+      <TitleH1>Политика конфиденциальности</TitleH1>
+      <TitleH3>Кто мы</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           Адрес нашего сайта: <span>https://qplast.by</span>
         </p>
       </div>
-      <h3 className={s.titleH3}>Коментарии</h3>
+      <TitleH3>Коментарии</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           Если посетитель оставляет комментарий на сайте, мы собираем данные,
@@ -29,7 +30,7 @@ const PrivacyPolicy = () => {
           контексте вашего комментария.
         </p>
       </div>
-      <h3 className={s.titleH3}>Медиафайлы</h3>
+      <TitleH3>Медиафайлы</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           Если вы зарегистрированный пользователь и загружаете фотографии на
@@ -39,7 +40,7 @@ const PrivacyPolicy = () => {
           эту информацию, скачав изображения с сайта.
         </p>
       </div>
-      <h3 className={s.titleH3}>Куки</h3>
+      <TitleH3>Куки</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           Если вы оставляете комментарий на нашем сайте, вы можете включить
@@ -66,7 +67,7 @@ const PrivacyPolicy = () => {
           только ID записи, отредактированной вами, истекает через 1 день.
         </p>
       </div>
-      <h3 className={s.titleH3}>Встраиваемое содержимое других вебсайтов</h3>
+      <TitleH3>Встраиваемое содержимое других вебсайтов</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           Статьи на этом сайте могут включать встраиваемое содержимое (например,
@@ -81,14 +82,14 @@ const PrivacyPolicy = () => {
           том сайте.
         </p>
       </div>
-      <h3 className={s.titleH3}>С кем мы делимся вашими данными</h3>
+      <TitleH3>С кем мы делимся вашими данными</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           Если вы запросите сброс пароля, ваш IP будет указан в email-сообщении
           о сбросе.
         </p>
       </div>
-      <h3 className={s.titleH3}>Как долго мы храним ваши данные</h3>
+      <TitleH3>Как долго мы храним ваши данные</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           Если вы оставляете комментарий, то сам комментарий и его метаданные
@@ -104,7 +105,7 @@ const PrivacyPolicy = () => {
           может видеть и изменять эту информацию.
         </p>
       </div>
-      <h3 className={s.titleH3}>Какие у вас права на ваши данные</h3>
+      <TitleH3>Какие у вас права на ваши данные</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           При наличии учетной записи на сайте или если вы оставляли комментарии,
@@ -115,7 +116,7 @@ const PrivacyPolicy = () => {
           безопасности.
         </p>
       </div>
-      <h3 className={s.titleH3}>Куда мы отправляем ваши данные</h3>
+      <TitleH3>Куда мы отправляем ваши данные</TitleH3>
       <div className={s.textBlock}>
         <p className={s.article}>
           Комментарии пользователей могут проверяться автоматическим сервисом

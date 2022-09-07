@@ -1,13 +1,6 @@
 @import "@scss/config/mixins";
 @import "@scss/config/vars";
 
-.titleH1 {
-  line-height: 100%;
-  font-weight: 700;
-  @include adaptiveValue("font-size", 36, 28, 1);
-  @include adaptiveValue("margin-bottom", 40, 15, 1);
-}
-
 .textBlock {
   display: flex;
   flex-direction: column;
@@ -20,20 +13,6 @@
   &:not(:last-child) {
     @include adaptiveValue("margin-bottom", 20, 10, 1);
   }
-}
-
-.titleH2 {
-  font-weight: 700;
-  line-height: 120%;
-  @include adaptiveValue("font-size", 26, 21, 1);
-  @include adaptiveValue("margin-bottom", 20, 15, 1);
-}
-
-.titleH3 {
-  font-weight: 700;
-  line-height: 120%;
-  @include adaptiveValue("font-size", 18, 16, 1);
-  @include adaptiveValue("margin-bottom", 10, 6, 1);
 }
 
 .list {

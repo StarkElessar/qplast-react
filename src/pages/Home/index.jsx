@@ -1,5 +1,5 @@
 import React from 'react'
-import SectionPromo from '../components/SectionPromo'
+import SectionPromo from '../../components/SectionPromo'
 
 const Home = () => {
   return (

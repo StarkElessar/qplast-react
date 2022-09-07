@@ -8,12 +8,6 @@
     padding-right: 0;
   }
 }
-.title {
-  line-height: 100%;
-  font-weight: 700;
-  @include adaptiveValue("font-size", 36, 28, 1);
-  @include adaptiveValue("margin-bottom", 40, 15, 1);
-}
 .postsItem {
   &:not(:last-child) {
     margin-bottom: 20px;

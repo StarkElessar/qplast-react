@@ -7,13 +7,14 @@ import s from './index.module.scss'
 import ContactInfo from '@components/ContactInfo'
 import MessageBlock from '@components/MessageBlock'
 import { useSelector } from 'react-redux'
+import { TitleH1, TitleH4 } from '@ui'
 
 const Shipping = () => {
   const { shippingList, calculationList } = useSelector(({ textData }) => textData)
   
   return (
     <section className='shipping__container'>
-      <h1 className={s.mainTitle}>Доставка и оплата</h1>
+      <TitleH1>Доставка и оплата</TitleH1>
       <MessageBlock
         BackIcon={GiTakeMyMoney}
         ListIcon={FiAlertCircle}
@@ -47,9 +48,9 @@ const Shipping = () => {
           При доставке Вам заказанной продукции проверяйте комплектность доставленного товара, также проверьте товар на наличие механических повреждений. При не заявлении Вами при получении продукции претензий по поводу механических повреждений, в дальнейшем подобные претензии не рассматриваются.
         </p>
       </div>
-      <h3 className={s.title}>
+      <TitleH4>
         В случае вопросов, пожеланий и претензий обращайтесь к нам по следующим координатам:
-      </h3>
+      </TitleH4>
       <ContactInfo />
     </section>
   )

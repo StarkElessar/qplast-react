@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 import s from './index.module.scss'
+import { TitleH1, TitleH2, TitleH3 } from '@ui'
 
 const Soglashenie = () => {
   const {
@@ -14,7 +15,7 @@ const Soglashenie = () => {
 
   return (
     <section className='soglashenie__container'>
-      <h1 className={s.titleH1}>Пользовательское соглашение</h1>
+      <TitleH1>Пользовательское соглашение</TitleH1>
       <div className={s.textBlock}>
         <p className={s.article}>
           Настоящее Пользовательское Соглашение (далее: Соглашение) регулирует
@@ -30,10 +31,8 @@ const Soglashenie = () => {
           </b>
         </p>
       </div>
-      <h2 className={s.titleH2}>
-        Права и обязанности сторон
-      </h2>
-      <h3 className={s.titleH3}>Пользователь имеет право:</h3>
+      <TitleH2>Права и обязанности сторон</TitleH2>
+      <TitleH3>Пользователь имеет право:</TitleH3>
       <ul className={s.list}>
         {userHasRight.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -41,7 +40,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h3 className={s.titleH3}>Администрация имеет право:</h3>
+      <TitleH3>Администрация имеет право:</TitleH3>
       <ul className={s.list}>
         {adminHasRight.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -49,7 +48,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h3 className={s.titleH3}>Пользователь обязуется:</h3>
+      <TitleH3>Пользователь обязуется:</TitleH3>
       <ul className={s.list}>
         {userUndertakes.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -57,7 +56,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h3 className={s.titleH3}>Администрация обязуется:</h3>
+      <TitleH3>Администрация обязуется:</TitleH3>
       <ul className={s.list}>
         {adminUndertakes.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -65,7 +64,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h3 className={s.titleH3}>Ответственность сторон:</h3>
+      <TitleH3>Ответственность сторон:</TitleH3>
       <ul className={s.list}>
         {responsibilityParties.map(({ id, text }) => (
           <li className={s.listItem} key={id}>
@@ -73,9 +72,7 @@ const Soglashenie = () => {
           </li>
         ))}
       </ul>
-      <h2 className={s.titleH2}>
-        Условия действия Соглашения
-      </h2>
+      <TitleH2>Условия действия Соглашения</TitleH2>
       <div className={s.textBlock}>
         <p className={s.article}>
           Данное Соглашение вступает в силу при любом использовании данного

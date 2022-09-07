@@ -1,18 +1,6 @@
 @import '@scss/config/mixins';
 @import '@scss/config/vars';
 
-.mainTitle {
-  line-height: 100%;
-  font-weight: 700;
-  @include adaptiveValue("font-size", 36, 28, 1);
-  @include adaptiveValue("margin-bottom", 40, 15, 1);
-}
-.title {
-  font-weight: 700;
-  line-height: 120%;
-  @include adaptiveValue('font-size', 18, 16, 1);
-  margin-bottom: 20px;
-}
 .textBlock {
   display: flex;
   flex-direction: column;

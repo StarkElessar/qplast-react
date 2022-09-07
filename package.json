@@ -24,6 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "postinstall": "link-module-alias",
+    "preinstall": "command -v link-module-alias && link-module-alias clean || true",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -45,14 +46,20 @@
     ]
   },
   "devDependencies": {
-    "link-module-alias": "^1.2.0"
+    "@types/jest": "^29.0.0",
+    "@types/node": "^18.7.15",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-redux": "^7.1.24",
+    "link-module-alias": "^1.2.0",
+    "typescript": "^4.8.2"
   },
   "_moduleAliases": {
-    "@scss": "./src/scss",
-    "@src": "./src",
-    "@components": "./src/components",
-    "@img": "./src/assets/images",
-    "@ui": "./src/components/ui",
-    "@store": "./src/store"
+    "scss": "./src/scss",
+    "src": "./src",
+    "components": "./src/components",
+    "img": "./src/assets/images",
+    "ui": "./src/components/ui",
+    "store": "./src/store"
   }
 }

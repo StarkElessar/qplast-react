@@ -17,7 +17,7 @@ import {
 } from './pages'
 
 const App: FC = (): JSX.Element => (
-  <BrowserRouter>
+  <BrowserRouter basename='/qplast-react'>
     <Wrapper>
       <Header />
       <main className='page'>

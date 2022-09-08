@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 
 import { RouteVariables } from './types/routesTypes'
 import { Wrapper, Header, Footer, BurgerMenu } from 'components'
@@ -17,7 +17,7 @@ import {
 } from './pages'
 
 const App: FC = (): JSX.Element => (
-  <BrowserRouter basename='/qplast-react'>
+  <HashRouter basename='/'>
     <Wrapper>
       <Header />
       <main className='page'>
@@ -39,7 +39,7 @@ const App: FC = (): JSX.Element => (
       <Footer />
       <BurgerMenu />
     </Wrapper>
-  </BrowserRouter>
+  </HashRouter>
 )
 
 export default App

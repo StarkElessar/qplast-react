@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/qplast-react/static/css/main.fa384210.css",
-    "main.js": "/qplast-react/static/js/main.267f7bf4.js",
+    "main.js": "/qplast-react/static/js/main.012c4a91.js",
     "static/media/01.png": "/qplast-react/static/media/01.4e0fb595d84e2462b840.png",
     "static/media/03.jpg": "/qplast-react/static/media/03.0776cae3f34e0fb77add.jpg",
     "static/media/15.jpg": "/qplast-react/static/media/15.42ddf3a2066e7f3a6ca1.jpg",
@@ -20,10 +20,10 @@
     "static/media/12.jpg": "/qplast-react/static/media/12.f15acbf797ae9a2cb68a.jpg",
     "index.html": "/qplast-react/index.html",
     "main.fa384210.css.map": "/qplast-react/static/css/main.fa384210.css.map",
-    "main.267f7bf4.js.map": "/qplast-react/static/js/main.267f7bf4.js.map"
+    "main.012c4a91.js.map": "/qplast-react/static/js/main.012c4a91.js.map"
   },
   "entrypoints": [
     "static/css/main.fa384210.css",
-    "static/js/main.267f7bf4.js"
+    "static/js/main.012c4a91.js"
   ]
 }

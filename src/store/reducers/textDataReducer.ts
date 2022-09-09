@@ -1,4 +1,4 @@
-import { ITextData } from 'types/textData'
+import { ITextData } from 'types/textDataTypes'
 import { BiLike } from 'react-icons/bi'
 import { FaRegUser, FaShippingFast } from 'react-icons/fa'
 import { MdPriceCheck, MdCreditScore } from 'react-icons/md'
@@ -19,22 +19,22 @@ const initialState: ITextData = {
     },
   ],
   aboutProductImages: [
-    { id: 1, img: ImagesAboutProduct.ImageProduct_1 },
-    { id: 2, img: ImagesAboutProduct.ImageProduct_2 },
-    { id: 3, img: ImagesAboutProduct.ImageProduct_3 },
-    { id: 4, img: ImagesAboutProduct.ImageProduct_4 },
-    { id: 5, img: ImagesAboutProduct.ImageProduct_5 },
-    { id: 6, img: ImagesAboutProduct.ImageProduct_6 },
-    { id: 7, img: ImagesAboutProduct.ImageProduct_7 },
-    { id: 8, img: ImagesAboutProduct.ImageProduct_8 },
-    { id: 9, img: ImagesAboutProduct.ImageProduct_9 },
-    { id: 10, img: ImagesAboutProduct.ImageProduct_10 },
-    { id: 11, img: ImagesAboutProduct.ImageProduct_11 },
-    { id: 12, img: ImagesAboutProduct.ImageProduct_12 },
-    { id: 13, img: ImagesAboutProduct.ImageProduct_13 },
-    { id: 14, img: ImagesAboutProduct.ImageProduct_14 },
-    { id: 15, img: ImagesAboutProduct.ImageProduct_15 },
-    { id: 16, img: ImagesAboutProduct.ImageProduct_16 },
+    { id: 1, img: ImagesAboutProduct.IMG_PRODUCT_1 },
+    { id: 2, img: ImagesAboutProduct.IMG_PRODUCT_2 },
+    { id: 3, img: ImagesAboutProduct.IMG_PRODUCT_3 },
+    { id: 4, img: ImagesAboutProduct.IMG_PRODUCT_4 },
+    { id: 5, img: ImagesAboutProduct.IMG_PRODUCT_5 },
+    { id: 6, img: ImagesAboutProduct.IMG_PRODUCT_6 },
+    { id: 7, img: ImagesAboutProduct.IMG_PRODUCT_7 },
+    { id: 8, img: ImagesAboutProduct.IMG_PRODUCT_8 },
+    { id: 9, img: ImagesAboutProduct.IMG_PRODUCT_9 },
+    { id: 10, img: ImagesAboutProduct.IMG_PRODUCT_10 },
+    { id: 11, img: ImagesAboutProduct.IMG_PRODUCT_11 },
+    { id: 12, img: ImagesAboutProduct.IMG_PRODUCT_12 },
+    { id: 13, img: ImagesAboutProduct.IMG_PRODUCT_13 },
+    { id: 14, img: ImagesAboutProduct.IMG_PRODUCT_14 },
+    { id: 15, img: ImagesAboutProduct.IMG_PRODUCT_15 },
+    { id: 16, img: ImagesAboutProduct.IMG_PRODUCT_16 },
   ],
   aboutBenefitsGrid: [
     {

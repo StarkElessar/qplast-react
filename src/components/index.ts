@@ -1,6 +1,6 @@
 export { default as Header } from './Header'
 export { default as BenefitsGrid } from './BenefitsGrid'
-export { default as BurgerMenu } from './BurgerMenu/index.tsx'
+export { default as BurgerMenu } from './BurgerMenu'
 export { default as ContactInfo } from './ContactInfo'
 export { default as Footer } from './Footer'
 export { default as HeaderTop } from './HeaderTop'

@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { FC, MouseEvent, useRef } from 'react'
 import { VscClose } from 'react-icons/vsc'
 
 import { useActions, useTypedSelector, useLockBodyScroll } from 'hooks'
@@ -6,12 +6,17 @@ import { LogoImages } from 'images'
 import { ContactInfo } from 'components'
 import MenuList from './MenuList'
 
-const BurgerMenu = ({ classTransition }) => {
+interface BurgerMenuProps {
+  classTransition: string
+}
+
+const BurgerMenu: FC<BurgerMenuProps> = ({ classTransition }): JSX.Element => {
   const { setCloseMenu } = useActions()
-  const burgerMenuRef = useRef()
-  const handleOutsideMenuClick = ({ target }) => target === burgerMenuRef.current && setCloseMenu()
+  const burgerMenuRef = useRef<HTMLDivElement>(null)
   const isVisibleBurgerMenu = useTypedSelector(({ burgerMenu }) => burgerMenu.isVisible)
   const menuItems = useTypedSelector(({ burgerMenu }) => burgerMenu.linkItems)
+  const handleOutsideMenuClick = ({ target }: MouseEvent<HTMLElement>) =>
+    target === burgerMenuRef.current && setCloseMenu()
 
   useLockBodyScroll(isVisibleBurgerMenu)
 

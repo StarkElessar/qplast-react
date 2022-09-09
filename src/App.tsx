@@ -17,7 +17,7 @@ import {
 } from './pages'
 
 const App: FC = (): JSX.Element => (
-  <HashRouter basename='/'>
+  <HashRouter>
     <Wrapper>
       <Header />
       <main className='page'>

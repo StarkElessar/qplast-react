@@ -1,13 +1,18 @@
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { IoMdArrowDropright } from 'react-icons/io'
 
 import { useActions } from 'hooks'
+import { ILinkItems } from 'types/burgerMenuTypes'
 
-const MenuList = ({ items }) => {
+interface MenuListProps {
+  items: ILinkItems[]
+}
+
+const MenuList: FC<MenuListProps> = ({ items }): JSX.Element => {
   const {setCloseMenu} = useActions()
-  const [isVisible, setIsVisible] = useState(false)
-  const onShowSubList = () => setIsVisible(!isVisible)
+  const [isVisible, setIsVisible] = useState<boolean>(false)
+  const onShowSubList = (): void => setIsVisible(!isVisible)
 
   return (
     <ul className='burger-menu__list'>

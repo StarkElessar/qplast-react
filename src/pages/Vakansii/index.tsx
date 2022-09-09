@@ -1,12 +1,11 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import { FC } from 'react'
 import Vacancy from 'components/Vacancy'
 
-import s from './index.module.scss'
 import { TitleH1 } from 'ui'
+import { useTypedSelector } from 'hooks'
 
-const Vakansii = () => {
-  const { allVacancy } = useSelector(({ textData }) => textData)
+const Vakansii: FC = (): JSX.Element => {
+  const { allVacancy } = useTypedSelector(({ textData }) => textData)
 
   return (
     <section className='vakansii__container'>

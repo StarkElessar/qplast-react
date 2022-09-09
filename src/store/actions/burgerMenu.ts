@@ -1,4 +1,4 @@
-import { BurgerMenuActionTypes } from 'types/burgerMenu'
+import { BurgerMenuActionTypes } from 'types/burgerMenuTypes'
 
 export const setVisibleMenu = () => ({
   type: BurgerMenuActionTypes.SET_VISIBLE_MENU,

@@ -1,4 +1,4 @@
-import { BurgerMenuAction, BurgerMenuActionTypes, IBurgerMenuState } from 'types/burgerMenu'
+import { BurgerMenuAction, BurgerMenuActionTypes, IBurgerMenuState } from 'types/burgerMenuTypes'
 import { RouteVariables } from 'types/routesTypes'
 
 const initialState: IBurgerMenuState = {

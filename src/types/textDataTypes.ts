@@ -22,7 +22,7 @@ export interface IAboutBenefitsGrid {
   description: string
 }
 
-interface ITags {
+export interface ITags {
   id: number
   label: string
 }

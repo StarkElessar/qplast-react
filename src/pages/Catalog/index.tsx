@@ -1,6 +1,6 @@
-import React from 'react'
+import {FC} from 'react'
 
-const Catalog = () => {
+const Catalog: FC = (): JSX.Element => {
   return (
     <section>Catalog</section>
   )

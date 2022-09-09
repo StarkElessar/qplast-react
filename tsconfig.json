@@ -17,9 +17,5 @@
     "jsx": "react-jsx",
     "typeRoots": ["node_modules/@types", "src/types"]
   },
-  "include": [
-    "public",
-    "src",
-    "src/types/typings.d.ts"
-  ]
+  "include": ["public", "src", "src/types/typings.d.ts"]
 }

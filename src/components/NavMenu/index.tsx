@@ -1,4 +1,4 @@
-import { memo } from 'react'
+import { FC, memo } from 'react'
 import { Link } from 'react-router-dom'
 import { FiAlignJustify } from 'react-icons/fi'
 
@@ -7,8 +7,8 @@ import { RouteVariables } from 'types/routesTypes'
 import NavList from './components/NavList'
 import SearchPanel from './components/SearchPanel'
 
-const NavMenu = () => {
-  const {setVisibleMenu} = useActions()
+const NavMenu: FC = (): JSX.Element => {
+  const { setVisibleMenu } = useActions()
 
   return (
     <nav className='header__nav nav-menu'>
